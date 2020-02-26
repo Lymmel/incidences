@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-title>Editar</ion-title>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="incidenceForm2" (ngSubmit)="editIncidence()">
+    <ion-item>
+      <ion-label>Title</ion-label>
+      <ion-input type="text" formControlName="title"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-input formControlName="description"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label>Image</ion-label>
+      <ion-input formControlName="image"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label>Video</ion-label>
+      <ion-input formControlName="video"></ion-input>
+    </ion-item>  
+    <ion-button shape="round" color="primary" fill="solid" type="submit" [disabled]="!this.incidenceForm2.valid">Editar</ion-button>
+  </form>
+</ion-content>

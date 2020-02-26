@@ -1,0 +1,26 @@
+<ion-menu side="start" menuId="first" contentId="principal">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-text>{{"menu" | translate}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="cambiarEsp()">Language: Spanish</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="cambiarEng()">Language: English</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="this.goToAboutAPP()">About our APP</ion-button>
+      </ion-item>
+      <ion-item *ngIf="this.auth.isAuthenticated()">
+        <ion-button (click)="this.logout()">Logout Google</ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

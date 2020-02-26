@@ -1,0 +1,8 @@
+{
+    "menu":"This is the configuration menu where you can change de language and logout your google session.",
+    "close":"Close",
+    "modal":{
+        "open":"Open"
+    }
+
+}

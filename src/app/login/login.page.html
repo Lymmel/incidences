@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="bg-image" >
+    <ion-item color="clear">
+    <ion-label>
+      Email
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="userFB.email"></ion-input> 
+  </ion-item>
+  <ion-item color="clear">
+    <ion-label>
+      Password
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="userFB.password"></ion-input>
+  </ion-item>
+  <ion-item-divider color="clear" id="btns">
+    <ion-button color="primary" (click)="this.onLogin()">Login</ion-button>
+    <ion-button href="/register" color="primary">New account</ion-button>
+  </ion-item-divider>
+ 
+  <p>Our app have a map where you can see the incidences at the public road.</p>
+  
+  
+  <p>You have to register to enter to de map and add a new post.</p>
+  
+  <ion-button (click)="this.loginGoogle()" class="ion-padding">Login with 
+    <ion-icon name="logo-googleplus" class="ion-padding"></ion-icon>
+  </ion-button>
+  <img id="ayto" src="../../assets/icon/descarga.png">
+  
+  <p id="one">City ​​hall of Cordoba</p>
+  
+  <ion-buttons class="fac">
+    <ion-button href="https://www.facebook.com/">
+      <img src="../../assets/icon/Facebook.png">
+    </ion-button>
+    <ion-button href="https://www.instagram.com/?hl=es">
+      <img src="../../assets/icon/Instagram.png">
+    </ion-button>
+    <ion-button href="https://twitter.com/home?lang=es">
+      <img src="../../assets/icon/Twitter.png">
+    </ion-button>
+  </ion-buttons>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+    "menu":"Este es el menú de configuración de la aplicación dónde podrás cambiar de idioma y desconectar tu sesion de Google.",
+    "close":"Cerrar",
+    "modal":{
+        "open":"Abrir"
+    }
+}
